@@ -7,6 +7,7 @@
 
 # Site settings
 title: Geowarin blog
+author: Geoffroy Warin
 email: geowarin@gmail.com
 description: >
   Awesome site description here
@@ -18,9 +19,14 @@ paginate:	5 # The number of posts to show per page on your homepage
 name: 'Geoffroy Warin'
 bio: >
   Hello! I write codez
+
 author_image: "/assets/images/author.jpg"
-twitter_username: geowarin
-github_username:  geowarin
+twitter:
+  username: geowarin
+github:
+  username: geowarin
+
+google_site_verification: To-lHBJ-1nWMoTSlWKsL3keqsH2cKS2xYp8gJ3Omq9g
 
 # Build settings
 markdown: kramdown
@@ -35,5 +41,6 @@ gems:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-gist
+  - jekyll-seo-tag
 
 permalink: :title.html
