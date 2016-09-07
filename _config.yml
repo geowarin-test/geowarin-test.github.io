@@ -28,6 +28,9 @@ github:
 
 google_site_verification: To-lHBJ-1nWMoTSlWKsL3keqsH2cKS2xYp8gJ3Omq9g
 
+google-analytics:
+  tracking_id : 'UA-46024908-1'
+
 # https://pages.github.com/versions/
 gems:
   - jekyll-paginate
