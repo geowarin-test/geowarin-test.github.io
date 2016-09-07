@@ -1,7 +1,20 @@
-@import 'bourbon/bourbon';
 @import 'syntax-highlighting';
 
 $grey-color:       #828282;
+
+@mixin clearfix {
+  &:after {
+    content:"";
+    display:table;
+    clear:both;
+  }
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+  -moz-box-sizing: $box-model; // Firefox <= 19
+  box-sizing: $box-model;
+}
 
 amp-sidebar {
   width: 250px;
@@ -394,7 +407,7 @@ body {
       margin-bottom: 12px;
       padding-top: 2px;
       p {
-        padding: 0 0 golden-ratio(1rem, 1);
+        padding: 0 0 1rem;
       }
     }
     ol li {

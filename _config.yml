@@ -28,12 +28,6 @@ github:
 
 google_site_verification: To-lHBJ-1nWMoTSlWKsL3keqsH2cKS2xYp8gJ3Omq9g
 
-# Build settings
-markdown: kramdown
-
-kramdown:
-  parse_block_html: true
-
 # https://pages.github.com/versions/
 gems:
   - jekyll-paginate
@@ -44,3 +38,7 @@ gems:
   - jekyll-seo-tag
 
 permalink: :title.html
+
+exclude:
+    - .sass-cache
+    - .idea
