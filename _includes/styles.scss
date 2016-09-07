@@ -3,6 +3,27 @@
 
 $grey-color:       #828282;
 
+amp-sidebar {
+  width: 250px;
+  padding-right: 10px;
+}
+.amp-sidebar-image {
+  line-height: 100px;
+  vertical-align:middle;
+}
+.amp-close-image {
+  top: 15px;
+  left: 225px;
+  cursor: pointer;
+}
+li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+button {
+  margin-left: 20px;
+}
+
 .icon {
 
     > svg {
@@ -15,6 +36,23 @@ $grey-color:       #828282;
             fill: $grey-color;
         }
     }
+}
+
+.big-icon {
+
+    > svg {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}
+
+.menu-icon {
 }
 
 amp-img {
