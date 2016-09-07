@@ -28,5 +28,12 @@ markdown: kramdown
 kramdown:
   parse_block_html: true
 
+# https://pages.github.com/versions/
 gems:
   - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist
+
+permalink: :title.html
