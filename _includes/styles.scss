@@ -1,12 +1,12 @@
 @import 'syntax-highlighting';
 
-$grey-color:       #828282;
+$grey-color: #828282;
 
 @mixin clearfix {
   &:after {
-    content:"";
-    display:table;
-    clear:both;
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -16,60 +16,68 @@ $grey-color:       #828282;
   box-sizing: $box-model;
 }
 
+.right {
+  float: right;
+}
+
 .social-share {
   text-align: center;
+  margin-top: 10px;
 }
 
 amp-sidebar {
   width: 250px;
-  padding-right: 10px;
-}
-.amp-sidebar-image {
-  line-height: 100px;
-  vertical-align:middle;
-}
-.amp-close-image {
-  top: 15px;
-  left: 225px;
-  cursor: pointer;
-}
-li {
-  margin-bottom: 20px;
-  list-style: none;
-}
-button {
-  margin-left: 20px;
+  background-color: white;
+  ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    height: 100%;
+  }
+  a {
+    &:hover {
+      background: $grey-color;
+      color: white;
+    }
+    padding: 0.6em 0 0.6em 0.6em;
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .icon {
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
+  > svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
 
-        path {
-            fill: $grey-color;
-        }
+    path {
+      fill: $grey-color;
     }
+  }
 }
 
 .big-icon {
 
-    > svg {
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-        vertical-align: middle;
+  > svg {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
 
-        path {
-            fill: $grey-color;
-        }
+    path {
+      fill: $grey-color;
     }
+  }
 }
 
 .menu-icon {
+  cursor: pointer;
 }
 
 amp-img {
@@ -82,7 +90,7 @@ amp-img {
 
 $rs: 16px;
 
-$font-serif: Georgia,Cambria,"Times New Roman",Times,'Lora', serif;
+$font-serif: Georgia, Cambria, "Times New Roman", Times, 'Lora', serif;
 $font-sans: "Helvetica Neue", 'Open Sans', Arial, Helvetica, sans-serif;
 
 @mixin respond-to($breakpoint) {
@@ -124,22 +132,22 @@ body {
   }
 
   .page-links {
-      display: block;
-      position: absolute;
-      top: 10px;
-      right: $rs;
-      font-weight: 200;
-      font-style: normal;
-      font-size: 18px;
-      line-height: 30px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: $rs;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
 
-      a {
-        text-decoration: none;
-        color: #999999;
-        &:hover {
-          color: #333333;
-        }
+    a {
+      text-decoration: none;
+      color: #999999;
+      &:hover {
+        color: #333333;
       }
+    }
   }
 
 }
@@ -530,16 +538,11 @@ body {
   a {
     text-decoration: none;
     color: #bbbbbb;
-    padding-left: 12px;
-    .hidden {
-      display: none;
-    }
     &:hover {
       color: #333333;
     }
   }
 }
-
 
 pre,
 code {
@@ -564,5 +567,5 @@ pre {
 }
 
 .pagination .disabled {
-    opacity: 0;
+  opacity: 0;
 }

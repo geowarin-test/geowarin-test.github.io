@@ -16,10 +16,12 @@ layout: default
     </section>
     <footer class="post-footer">
       <section class="share">
-        <a class="icon" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.id }}&text={{page.title | cgi_escape}}&via={{ site.twitter.username }}" target="_blank">
-          Share on
+        For more articles on {{ page.categories | array_to_sentence_string }}, follow
+        <a href="https://twitter.com/intent/follow?user_id=135249820">
           {% include icon-twitter.html %}
+          geowarin
         </a>
+        on twitter
       </section>
     </footer>
     <div class="bottom-teaser cf">
