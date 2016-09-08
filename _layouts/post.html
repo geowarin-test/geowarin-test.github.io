@@ -2,63 +2,81 @@
 layout: default
 ---
 <main class="content" role="main">
-  <article class="post">
+    <article class="post">
 
-    <div class="post-meta">
-      <h1 class="post-title">{{ page.title }}</h1>
-    </div>
+        <div class="post-meta">
+            <h1 class="post-title">{{ page.title }}</h1>
+        </div>
 
-    {% include social-share.html %}
+        {% include social-share.html %}
 
-    <section class="post-content">
-      <a name="topofpage"></a>
-      {{content}}
-    </section>
-    <footer class="post-footer">
-      <section class="share">
-        For more articles on {{ page.categories | array_to_sentence_string }}, follow
-        <a href="https://twitter.com/intent/follow?user_id=135249820">
-          {% include icon-twitter.html %}
-          geowarin
-        </a>
-        on twitter
-      </section>
-    </footer>
-    <div class="bottom-teaser cf">
-      <div class="isLeft">
-        <h5 class="index-headline featured"><span>Written by</span></h5>
-        <section class="author">
-          <div class="author-image"></div>
-          <h4>{{ site.name }}</h4>
-          <p class="bio">{{site.bio}}</p>
+        <section class="post-content">
+            <a name="topofpage"></a>
+            {{content}}
+        </section>
+        <footer class="post-footer">
+            <section class="share">
+                For more articles on {{ page.categories | array_to_sentence_string }}, follow
+                <a href="https://twitter.com/intent/follow?user_id=135249820">
+                    {% include icon-twitter.html %}
+                    geowarin
+                </a>
+                on twitter
+            </section>
+        </footer>
+        <div class="bottom-teaser cf">
+            <div class="isLeft">
+                <h5 class="index-headline featured"><span>Written by</span></h5>
+                <section class="author">
+                    <div class="author-image"></div>
+                    <h4>{{ site.name }}</h4>
+                    <p class="bio">{{site.bio}}</p>
 
-          <p>
+                    <p>
             <span>
               {% if site.github.username %}
                 {% include icon-github.html username=site.github.username %}
               {% endif %}
             </span>
 
-            <span>
+                        <span>
               {% if site.twitter.username %}
                 {% include icon-twitter.html username=site.twitter.username %}
               {% endif %}
             </span>
-          </p>
-          <hr />
-          <p class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
+                    </p>
+                    <hr/>
+                    <p class="published">Published
+                        <time datetime="{{ page.date | date: " %F %R
+                        " }}">{{ page.date | date_to_string }}</time></p>
+                </section>
+            </div>
+            <div class="isRight">
+                <h5 class="index-headline featured"><span>Supported by</span></h5>
+                <footer class="site-footer">
+                    <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a> and <a
+                            href="https://github.com/ageitgey/amplify">Amplify</a></section>
+                    <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i
+                        class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
+                    <div class="inner">
+                        <section class="copyright">All content copyright <a
+                                href="mailto:{{ site.email}}">{{site.name}}</a> &copy; {{ site.time | date: '%Y' }}<br>All
+                            rights reserved.
+                        </section>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <section class="comments">
+            <amp-iframe
+                    src="https://tempest.services.disqus.com/engage-iframe/amp-page/?disqus_url={{site.url}}{{page.url}}&forum={{site.disqus.shortname}}"
+                    sandbox="allow-Same-origin allow-forms allow-modals allow-scripts allow-popups"
+                    layout="responsive"
+                    frameborder="0"
+                    width="600" height="500">
+            </amp-iframe>
         </section>
-      </div>
-      <div class="isRight">
-        <h5 class="index-headline featured"><span>Supported by</span></h5>
-        <footer class="site-footer">
-          <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a> and <a href="https://github.com/ageitgey/amplify">Amplify</a></section>
-          <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
-          <div class="inner">
-            <section class="copyright">All content copyright <a href="mailto:{{ site.email}}">{{site.name}}</a> &copy; {{ site.time | date: '%Y' }}<br>All rights reserved.</section>
-          </div>
-        </footer>
-      </div>
-    </div>
-  </article>
+
+    </article>
 </main>
