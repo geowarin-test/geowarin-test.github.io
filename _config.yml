@@ -10,10 +10,10 @@ title: Geowarin blog
 author: Geoffroy Warin
 email: geowarin@gmail.com
 description: >
-  Web development
+  Web developer
 logo: "/assets/images/logo.jpg"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://geowarin.github.io" # the base hostname & protocol for your site
+url: "https://geowarin.github.io" # the base hostname & protocol for your site
 paginate: 10 # The number of posts to show per page on your homepage
 
 name: 'Geoffroy Warin'
@@ -30,6 +30,9 @@ google_site_verification: To-lHBJ-1nWMoTSlWKsL3keqsH2cKS2xYp8gJ3Omq9g
 
 google-analytics:
   tracking_id : 'UA-46024908-1'
+
+disqus:
+  shortname: geowarin
 
 # https://pages.github.com/versions/
 gems:

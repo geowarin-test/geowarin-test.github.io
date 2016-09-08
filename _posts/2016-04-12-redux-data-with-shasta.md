@@ -68,7 +68,7 @@ To get started quickly, I created a project [using nwb]({% post_url 2016-02-18-r
 Here is what the project looks like after setting up Shasta with the router and
 Tahoe:
 
-<img src="/assets/images/articles/2016-04-shasta-layout.png" width="280" >
+<amp-img src="/assets/images/articles/2016-04-shasta-layout.png" layout="fixed" height="400" width="280"></amp-img>
 
 Let's dig into the core package.
 

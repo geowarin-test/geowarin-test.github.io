@@ -27,12 +27,12 @@ The code is available [on github](https://github.com/geowarin/boot-social-api).
 Before coding anything, you will need to create a new Twitter application
 in [your twitter apps page](https://apps.twitter.com/).
 
-![Creating a Twitter app](/assets/images/articles/2016-02-twitter-app.png "Creating a Twitter app")
+<amp-img src="/assets/images/articles/2016-02-twitter-app.png" layout="responsive" width="1523" height="1107"></amp-img>
 
 Then go to the "Keys and access tokens" tab and note your API key and API secret
 ids.
 
-![Twitter app keys](/assets/images/articles/2016-02-twitter-app-keys.png "Twitter app keys")
+<amp-img src="/assets/images/articles/2016-02-twitter-app-keys.png" layout="responsive" width="1479" height="692"></amp-img>
 
 ## Creating a Spring Boot app
 
@@ -79,7 +79,7 @@ request on the `/signup` URL by default).
 
 Here is an overview of the authentication flow in Spring Social:
 
-![Spring Social flow](/assets/images/articles/2016-02-social-flow.png "Spring Social flow")
+<amp-img src="/assets/images/articles/2016-02-social-flow.png" layout="responsive" width="1360" height="956"></amp-img>
 
 * Your application produces a POST request to `/signin/{providerId}`
 * The `ProviderSigninController` then redirects the user to the identification provider's sign-in screen
@@ -373,7 +373,7 @@ if you are wary of this implementation, consider disabling Spring boot auto-conf
 
 We can use the h2 console Spring boot auto-configured for us to check the database.
 
-![The data in our database](/assets/images/articles/2016-02-social-db.png "The data in our database")
+<amp-img src="/assets/images/articles/2016-02-social-db.png" layout="responsive" width="917" height="421"></amp-img>
 
 ## Conclusion
 

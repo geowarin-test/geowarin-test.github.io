@@ -1,11 +1,10 @@
 ---
 layout: page
 title: Mastering Spring MVC 4
-permalink: /mastering/
 ---
 
 <a href="https://www.packtpub.com/application-development/mastering-spring-mvc-4">
-    <img class="right" src="/assets/images/book/thumb.jpg" />
+    <amp-img class="right" src="/assets/images/book/thumb.jpg" layout="fixed" width="130px" height="160px" />
 </a>
   
 Hello, dear visitor. I know why you're here!
