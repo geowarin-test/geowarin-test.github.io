@@ -13,7 +13,8 @@ description: >
   Web developer
 logo: "/assets/images/logo.jpg"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://geowarin.github.io" # the base hostname & protocol for your site
+#url: "https://geowarin.github.io" # the base hostname & protocol for your site
+url: "https://geowarin-test.github.io" # the base hostname & protocol for your site
 paginate: 10 # The number of posts to show per page on your homepage
 
 name: 'Geoffroy Warin'
@@ -36,7 +37,6 @@ disqus:
 
 # https://pages.github.com/versions/
 gems:
-  - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-feed

@@ -70,11 +70,12 @@ layout: default
 
         <section class="comments">
             <amp-iframe
-                    src="https://tempest.services.disqus.com/engage-iframe/amp-page/?disqus_url={{site.url}}{{page.url}}&forum={{site.disqus.shortname}}"
+                    src="{{site.url}}/comments.html?url=https://geowarin.github.io/{{page.url}}"
                     sandbox="allow-Same-origin allow-forms allow-modals allow-scripts allow-popups"
-                    layout="responsive"
-                    frameborder="0"
-                    width="600" height="500">
+                    height="300"
+                    resizable
+                    frameborder="0">
+                <div overflow tabindex="0" role="button" aria-label="Read more">Read more!</div>
             </amp-iframe>
         </section>
 
