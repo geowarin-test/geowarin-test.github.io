@@ -47,8 +47,7 @@ layout: default
                     </p>
                     <hr/>
                     <p class="published">Published
-                        <time datetime="{{ page.date | date: " %F %R
-                        " }}">{{ page.date | date_to_string }}</time></p>
+                        <time datetime="{{ page.date | date: " %F %R " }}">{{ page.date | date_to_string }}</time></p>
                 </section>
             </div>
             <div class="isRight">
@@ -60,8 +59,8 @@ layout: default
                         class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
                     <div class="inner">
                         <section class="copyright">All content copyright <a
-                                href="mailto:{{ site.email}}">{{site.name}}</a> &copy; {{ site.time | date: '%Y' }}<br>All
-                            rights reserved.
+                                href="mailto:{{ site.email}}">{{site.name}}</a> &copy; {{ site.time | date: '%Y' }}
+                            <br>All rights reserved.
                         </section>
                     </div>
                 </footer>
@@ -71,7 +70,7 @@ layout: default
         <section class="comments">
             <amp-iframe
                     src="{{site.url}}/comments.html?url=https://geowarin.github.io{{page.url}}"
-                    sandbox="allow-forms allow-modals allow-scripts allow-popups"
+                    sandbox="allow-Same-origin allow-forms allow-modals allow-scripts allow-popups"
                     height="300"
                     resizable
                     frameborder="0">
