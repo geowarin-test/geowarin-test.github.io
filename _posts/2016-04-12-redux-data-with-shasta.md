@@ -102,7 +102,7 @@ export default [
 
 Finally, the `actions.js`:
 
-```
+```js
 import { actions as routeActions } from 'shasta-router'
 import { createActions, createReducerActions } from 'shasta';
 import store from './store'
@@ -134,7 +134,7 @@ according to a glob expression.
 
 This avoids writing repetitive and error prone-code like:
 
-```
+```js
 import * as reducer1 from './reducer1'
 import * as reducer2 from './reducer2'
 

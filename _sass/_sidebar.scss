@@ -1,0 +1,22 @@
+amp-sidebar {
+  width: 250px;
+  background-color: white;
+  ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    height: 100%;
+  }
+  a {
+    &:hover {
+      background: $grey-color;
+      color: white;
+    }
+    padding: 0.6em 0 0.6em 0.6em;
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+}
