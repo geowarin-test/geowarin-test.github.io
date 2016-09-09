@@ -41,21 +41,31 @@ not_in_menu: true
         (d.head || d.body).appendChild(s);
     })();
     window.addEventListener("message", receiveMessage, false);
-    function receiveMessage(event)
-    {
+
+    function parseMessage(data) {
+        try {
+            return JSON.parse(event.data);
+        } catch (e) {
+            return {name: data};
+        }
+    }
+
+    function sendResize(height) {
+        window.parent.postMessage({
+            sentinel: 'amp',
+            type: 'embed-size',
+            height: height
+        }, '*');
+    }
+
+    function receiveMessage(event) {
+
         if (event.data) {
-            try {
-                JSON.parse(event.data);
-            } catch (e) {
-                return false;
-            }
-            var msg = JSON.parse(event.data);
+            var msg = parseMessage(event.data);
             if (msg.name == 'resize') {
-                window.parent.postMessage({
-                    sentinel: 'amp',
-                    type: 'embed-size',
-                    height: msg.data.height
-                }, '*');
+                sendResize(msg.data.height);
+            } else if (name === 'rendered') {
+                sendResize(msg.data.height);
             }
         }
     }
