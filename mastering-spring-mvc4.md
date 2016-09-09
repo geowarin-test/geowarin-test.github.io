@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Mastering Spring MVC 4
+icon: book
 ---
 
 <a href="https://www.packtpub.com/application-development/mastering-spring-mvc-4">
